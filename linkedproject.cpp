@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std;
+using namespaceline std;
 struct node{
 int datalie;
 node *link
