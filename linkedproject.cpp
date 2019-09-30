@@ -25,7 +25,23 @@ tail=temp;
 tail->link=NULL;
 }
 };
+void insert_position(int pos, int value)
+  {
+    node *pre=new node;
+    node *cur=new node;
+    node *temp=new node;
+    cur=head;
+    for(int i=1;i<pos;i++)
+    {
+      pre=cur;
+      cur=cur->next;
+    }
+    temp->data=value;
+    pre->next=temp;	
+    temp->next=cur;
+  }
 int main(){
 list obj;
 obj.insert(15);
+  obj.insert_position(5,4);
 }
