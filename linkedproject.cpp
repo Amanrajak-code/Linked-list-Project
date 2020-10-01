@@ -4,7 +4,7 @@ struct node{
 int datalie;
 node *link
 };
-class last{
+class list{
 private:
 node *head,*tail;
 public:
